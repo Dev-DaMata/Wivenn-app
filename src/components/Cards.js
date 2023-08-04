@@ -16,7 +16,7 @@ function Cards(props) {
               <div className="card-body" key={index}>
                 <h5 className="card-title">{card.title ? card.title : ''}</h5>
                 <p className="card-text">{card.text ? card.text : ''}</p>
-                <button className="btn btn-primary" onClick={()=>{navigate(card.link)}}>Botao</button>
+                <button className="card-btn" onClick={()=>{navigate(card.link)}}>Botao</button>
               </div>
           )
         })

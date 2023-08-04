@@ -6,7 +6,7 @@ function Home() {
   const cardsData = [
     {title: 'Departamentos', text: 'Administre os seus departamentos', link: '/department'},
     {title: 'Funcionarios', text: 'Administre os seus funcionarios', link: '/employees'},
-    {title: 'Tarefas', text: 'Administre as suas tarefas', link: '/tasks'},
+    {title: 'Tarefas', text: 'Administre todas as suas tarefas', link: '/tasks'},
   ];
 
   return (

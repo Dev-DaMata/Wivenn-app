@@ -1,0 +1,11 @@
+.home-header{
+  background-color: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.home-title{
+  margin: 0;
+}

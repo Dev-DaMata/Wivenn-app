@@ -56,3 +56,6 @@
     background-color: rgb(60, 30, 60);
     color: white;
 }
+.department-list-item-icon-container{
+    display: flex;
+}

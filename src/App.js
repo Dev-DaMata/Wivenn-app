@@ -2,14 +2,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Departments from "./pages/Departments"
+import MultiSector from "./pages/MultiSector"
+import DepartmentDetail from "./pages/DepartmentDetail"
+import MultiCreate from "./pages/MultiCreate"
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/departments" element={<Departments />} />
+        <Route path="/create" element={<MultiCreate />} />
+        <Route path="/view" element={<MultiSector />} />
+        <Route path="/departments/:id" element={<DepartmentDetail/>}/>
       </Routes>
     </Router>
   );

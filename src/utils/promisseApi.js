@@ -23,5 +23,6 @@ export const promisseApi = (method, path, callbackData, callbackError, body = {}
     })
     .catch(err => {
       callbackError(err)
+      console.log(err)
     });
 }

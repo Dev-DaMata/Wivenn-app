@@ -11,7 +11,6 @@ function Cards(props) {
     <div className="cards-container">
       {
         cardsData && cardsData.map((card, index) => {
-          console.log('pimba')
           return(
               <div className="card-body" key={index}>
                 <h5 className="card-title">{card.title ? card.title : ''}</h5>

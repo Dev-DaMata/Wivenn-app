@@ -1,10 +1,11 @@
 import axios from 'axios';
 
-export const baseURL = 'http://127.0.0.1:8000/'
+
+export const baseURL = 'http://127.0.0.1:8000/api/'
 
 export const api = axios.create({
   baseURL: baseURL,
-  headers
+  // headers
 });
 
 export const promisseApi = (method, path, callbackData, callbackError, body = {}, config = {}) => {

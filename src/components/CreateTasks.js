@@ -47,7 +47,7 @@ function CreateTasks() {
   }, [tasksData])
 
   return (
-  <div>
+  <div className="create-tasks-container">
     <div className="task-detail-header">Tarefa: {tasksData.title}</div>
     <input name="title" value={tasksData.title} placeholder="Titulo" onChange={e=>handleFormChange(e)}/>
     <input name="description" value={tasksData.description} placeholder="Descrição" onChange={e=>handleFormChange(e)}/>

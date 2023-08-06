@@ -72,7 +72,7 @@ function CreateEmployee() {
   }, [employeeData])
 
   return (
-  <div>
+  <div className="create-employee-container">
     <div className="employee-detail-header">Funcionario: {employeeData.firstName}</div>
     <input name="firstName" value={employeeData.firstName} placeholder="Nome" onChange={e=>handleFormChange(e)}/>
     <input name="lastName" value={employeeData.lastName} placeholder="Sobrenome" onChange={e=>handleFormChange(e)}/>

@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import { promisseApi } from "../utils/promisseApi";
 import { useNavigate } from 'react-router-dom';
+import "../styles/Departments.css";
 
 
 function CreateDepartment() {
@@ -28,7 +29,7 @@ function CreateDepartment() {
   }
 
   return (
-   <div>
+   <div className="create-department-container">
       <div className="create-department-header">
       Departemanto:
       </div>

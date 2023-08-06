@@ -1,6 +1,7 @@
 .create-department-header{
     height: 100px;
     background-color: #f5f5f5;
+    border-radius: 5px;
 }
 .department-list-item-dark{
     background-color: rgb(140, 140, 140, 0.2);
@@ -62,4 +63,8 @@
 }
 .department-list-item-icon-container{
     display: flex;
+}
+
+.create-department-container{
+    margin: 25px;
 }

@@ -1,4 +1,9 @@
 .task-detail-header{
     height: 100px;
     background-color: #f5f5f5;
+    border-radius: 5px;
   }
+
+.create-tasks-container{
+  margin: 25px;
+}

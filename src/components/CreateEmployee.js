@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from "react";
 import { promisseApi } from "../utils/promisseApi";
 import { useLocation } from 'react-router-dom';
-import "../styles/DepartmentDetail.css";
+import { useNavigate } from 'react-router-dom';
+import "../styles/EmployeeDetail.css";
 
 function CreateEmployee() {
   const [employeeData, setEmployeeData] = useState({})
   const [departmentsSelectList, setDepartmentsSelectList] = useState([])
+  const navigate = useNavigate();
 
   const location = useLocation();
 
@@ -20,7 +22,7 @@ function CreateEmployee() {
       'post',
       `funcionario`,
       (data)=>{
-        setEmployeeData(data)
+        navigate('/view')
       },
       (err)=>{
         console.log(err)
@@ -58,7 +60,7 @@ function CreateEmployee() {
         )})}
       </select>
       
-    <button onClick={()=> handleSubmitEmployee()} >Alterar</button>
+    <button onClick={()=> handleSubmitEmployee()} >Criar</button>
   </div>
   );
 }

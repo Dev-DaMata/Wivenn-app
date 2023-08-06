@@ -11,25 +11,50 @@ function CreateEmployee() {
 
   const location = useLocation();
 
+  const isValidEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailPattern.test(email);
+  };
+
+  const isValidPhone = (phone) => {
+    const phonePattern = /^[0-9]{9}$/; // Supondo um formato de número de telefone de 10 dígitos
+    return phonePattern.test(phone);
+  };
+
   const handleFormChange = e =>{
    let key = e.target.name
    let value = e.target.value
    setEmployeeData({...employeeData, [key]: value})
   }
 
-  const handleSubmitEmployee = () =>{
+  const handleSubmitEmployee = () => {
+    if (!employeeData.firstName || !employeeData.lastName) {
+      alert("Nome e sobrenome são obrigatórios.");
+      return;
+    }
+  
+    if (!isValidEmail(employeeData.email)) {
+      alert("Formato de email inválido.");
+      return;
+    }
+  
+    if (!isValidPhone(employeeData.phone)) {
+      alert ("Formato de número de telefone inválido. Por favor, insira um número de 9 dígitos.");
+      return;
+    }
+  
     promisseApi(
       'post',
       `funcionario`,
-      (data)=>{
-        navigate('/view')
+      (data) => {
+        navigate('/view');
       },
-      (err)=>{
-        console.log(err)
+      (err) => {
+        console.log(err);
       },
       employeeData
-    )
-  }
+    );
+  };
 
 
   useEffect(()=>{

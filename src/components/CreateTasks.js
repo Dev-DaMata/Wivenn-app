@@ -48,7 +48,7 @@ function CreateTasks() {
 
   return (
   <div>
-    <div className="tasks-detail-header">Tarefa: {tasksData.title}</div>
+    <div className="task-detail-header">Tarefa: {tasksData.title}</div>
     <input name="title" value={tasksData.title} placeholder="Titulo" onChange={e=>handleFormChange(e)}/>
     <input name="description" value={tasksData.description} placeholder="Descrição" onChange={e=>handleFormChange(e)}/>
     <input name="due_date" value={tasksData.due_date} placeholder="Data" onChange={e=>handleFormChange(e)}/>

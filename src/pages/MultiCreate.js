@@ -1,10 +1,16 @@
 // App.js
 import React from "react";
 import CreateDepartment from "../components/CreateDepartment";
+import CreateEmployee from "../components/CreateEmployee";
+
 
 function MultiCreate() {
   return (
-    <CreateDepartment/>
+    <div>
+      <CreateDepartment/>
+      <CreateEmployee/>
+    </div>
+
   );
 }
 

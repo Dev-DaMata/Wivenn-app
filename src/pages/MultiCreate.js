@@ -2,6 +2,7 @@
 import React from "react";
 import CreateDepartment from "../components/CreateDepartment";
 import CreateEmployee from "../components/CreateEmployee";
+import CreateTasks from "../components/CreateTasks"
 
 
 function MultiCreate() {
@@ -9,6 +10,7 @@ function MultiCreate() {
     <div>
       <CreateDepartment/>
       <CreateEmployee/>
+      <CreateTasks/>
     </div>
 
   );

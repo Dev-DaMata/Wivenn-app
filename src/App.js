@@ -6,6 +6,7 @@ import MultiSector from "./pages/MultiSector"
 import DepartmentDetail from "./pages/DepartmentDetail"
 import MultiCreate from "./pages/MultiCreate"
 import EmployeeDetail from "./pages/EmployeeDetail";
+import TasksDetail from "./pages/TasksDetail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/view" element={<MultiSector />} />
         <Route path="/departments/:id" element={<DepartmentDetail/>}/>
         <Route path="/employee/:id" element={<EmployeeDetail/>}/>
+        <Route path="/tasks/:id" element={<TasksDetail/>}/>
       </Routes>
     </Router>
   );
